@@ -2,3 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* User name Button  */
+/* TEMUR */
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.gradient_anim_btn {
+  font-weight: 500;
+  background: -webkit-linear-gradient(
+      225deg,
+      rgb(251, 21, 242),
+      rgb(21, 198, 251),
+      rgb(251, 21, 242)
+    )
+    0% 0% / 300% 300%;
+  background-size: 200% auto;
+  animation: gradient_move 4s ease infinite;
+}
+
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
+}

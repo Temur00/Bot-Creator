@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/page";
-import Footer from "@/components/Footer/page";
+import Header from "@/components/Header";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <header>
-          <Header />
-        </header>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.className} bg-slate-100 dark:bg-slate-900 transition duration-800`}
+      >
+        <Providers>
+          <div
+            style={{ transition: "0.5s" }}
+            className="bg-slate-100  transition"
+          >
+            <Header />
+            <main>{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
