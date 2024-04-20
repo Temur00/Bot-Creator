@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-slate-100 dark:bg-slate-900 transition duration-800`}
+        className={`${inter.className} bg-slate-100 dark:bg-[#151521] transition duration-800`}
       >
         <Providers>
           <div

@@ -11,15 +11,15 @@ const Home = () => {
   return (
     <div
       style={{ maxWidth: "400px" }}
-      className="bg-slate-100 dark:bg-slate-900 container mx-auto px-[12px] h-screen"
+      className="bg-slate-100 dark:bg-[#151521] container mx-auto px-[12px] h-screen"
     >
       <section>
-        <p className="text-[#7E8299] flex items-center justify-center text-[32px] font-semibold  pt-[120px]">
+        <p className="text-[#7E8299] flex items-center justify-center text-[32px] font-semibold  pt-[110px]">
           Dashboard
         </p>
-        <button className="btn-grad mx-auto flex justify-center mt-3  px-3 py-1 rounded-3xl items-center ">
+        {/* <button className="btn-grad mx-auto flex justify-center mt-3  px-3 py-1 rounded-3xl items-center ">
           <p className="text-white ">Welcome Guest!</p>
-        </button>
+        </button> */}
 
         <button className="gradient_anim_btn mx-auto flex justify-center mt-3  px-3 py-1 rounded-3xl items-center ">
           <p className="text-white ">Welcome Guest!</p>
@@ -27,7 +27,7 @@ const Home = () => {
       </section>
       <section>
         <div className="flex gap-2  pt-[32px] justify-center">
-          <div className="w-[112px] rounded-lg cursor-pointer  bg-white dark:bg-slate-700">
+          <div className="w-[112px] rounded-lg cursor-pointer  bg-white dark:bg-[#1E1E2D]">
             <p className="flex justify-center items-center pt-3">
               <HiPlus className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
             </p>
@@ -35,7 +35,7 @@ const Home = () => {
               create a new bot
             </p>
           </div>
-          <div className="w-[112px] rounded-lg cursor-pointer   bg-white dark:bg-slate-700">
+          <div className="w-[112px] rounded-lg cursor-pointer   bg-white dark:bg-[#1E1E2D]">
             <p className="flex justify-center items-center pt-3">
               <FaCreditCard className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
             </p>
@@ -43,7 +43,7 @@ const Home = () => {
               payments
             </p>
           </div>
-          <div className="w-[112px] rounded-lg  cursor-pointer bg-white dark:bg-slate-700">
+          <div className="w-[112px] rounded-lg  cursor-pointer bg-white dark:bg-[#1E1E2D]">
             <p className="flex justify-center items-center pt-3">
               <TfiMoreAlt className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
             </p>
@@ -57,7 +57,7 @@ const Home = () => {
             My bots
           </p>
           <div className="flex flex-col  gap-2 pt-3">
-            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-slate-600 pl-2 py-[9px]">
+            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
               <Image
                 src={BotImage}
                 className="w-[50px] h-[50px] "
@@ -78,7 +78,7 @@ const Home = () => {
                 <AiOutlineRight className="text-blue-600 text-[42px] " />
               </p>
             </div>
-            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-slate-600 pl-2 py-[9px]">
+            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
               <Image
                 src={BotImage}
                 className="w-[50px] h-[50px] "
@@ -99,7 +99,7 @@ const Home = () => {
                 <AiOutlineRight className="text-blue-600 text-[42px] " />
               </p>
             </div>
-            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-slate-600 pl-2 py-[9px]">
+            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
               <Image
                 src={BotImage}
                 className="w-[50px] h-[50px] "
@@ -128,3 +128,5 @@ const Home = () => {
 };
 
 export default Home;
+
+// made by Temur tg: https://t.me/Temur_vibes
