@@ -6,7 +6,7 @@ import ThemeSwitch from "./ThemeSwitch";
 const Header = () => {
   return (
     <div
-      style={{ maxWidth: "400px" }}
+      style={{ maxWidth: "420px" }}
       className="mx-auto bg-slate-100 dark:bg-[#151521] px-[10px] items-center flex justify-between h-[60px] fixed top-0 left-0 right-0 z-10 opacity-95"
     >
       <p className="dark:text-slate-200 text-slate-800">Logo</p>

@@ -10,7 +10,7 @@ import { AiOutlineRight } from "react-icons/ai";
 const Home = () => {
   return (
     <div
-      style={{ maxWidth: "400px" }}
+      style={{ maxWidth: "420px" }}
       className="bg-slate-100 dark:bg-[#151521] container mx-auto px-[12px] h-screen"
     >
       <section>
