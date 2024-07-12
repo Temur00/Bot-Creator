@@ -1,4 +1,4 @@
-import { BotImage } from "@/assets";
+import { BotImage, EnterVector, paymentVector } from "@/assets";
 import Image from "next/image";
 import React from "react";
 import { HiPlus } from "react-icons/hi";
@@ -22,12 +22,14 @@ const Home = () => {
         </button> */}
 
         <button className="gradient_anim_btn mx-auto flex justify-center mt-3  px-3 py-1 rounded-3xl items-center ">
-          <p className="text-white ">Welcome Guest!</p>
+          <p className="text-white flex gap-1 ">
+            Balance: <p>100</p> $
+          </p>
         </button>
       </section>
       <section>
         <div className="flex gap-2  pt-[32px] justify-center">
-          <div className="w-[112px] rounded-lg cursor-pointer  bg-white dark:bg-[#1E1E2D]">
+          <div className="w-[111px] rounded-lg cursor-pointer  bg-white dark:bg-[#1E1E2D]">
             <p className="flex justify-center items-center pt-3">
               <HiPlus className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
             </p>
@@ -35,15 +37,20 @@ const Home = () => {
               create a new bot
             </p>
           </div>
-          <div className="w-[112px] rounded-lg cursor-pointer   bg-white dark:bg-[#1E1E2D]">
-            <p className="flex justify-center items-center pt-3">
-              <FaCreditCard className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
+          <div className="w-[111px] rounded-lg cursor-pointer   bg-white dark:bg-[#1E1E2D]">
+            <p className="flex justify-center items-center pt-4">
+              {/* <FaCreditCard className="flex text-[32px] font-black text-blue-600 justify-center items-center" /> */}
+              <Image
+                src={paymentVector}
+                alt="Vector"
+                className="flex text-[32px] font-black text-blue-600 justify-center items-center"
+              />
             </p>
-            <p className="text-[12px] pb-1 text-center text-blue-600 ">
+            <p className="text-[12px] pb-1 pt-2 text-center text-blue-600 ">
               payments
             </p>
           </div>
-          <div className="w-[112px] rounded-lg  cursor-pointer bg-white dark:bg-[#1E1E2D]">
+          <div className="w-[111px] rounded-lg  cursor-pointer bg-white dark:bg-[#1E1E2D]">
             <p className="flex justify-center items-center pt-3">
               <TfiMoreAlt className="flex text-[32px] font-black text-blue-600 justify-center items-center" />
             </p>
@@ -70,12 +77,16 @@ const Home = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-[#7E8299] text-[13px]">28,367 users</p>
                   <p className="w-[49px] h-[15px] flex justify-center items-center rounded-lg bg-green-100 text-green-500 text-[9px]">
-                    +1.33%
+                    online
                   </p>
                 </div>
               </div>
-              <p className="flex justify-end pl-24 cursor-pointer ">
-                <AiOutlineRight className="text-blue-600 text-[42px] " />
+              <p className="flex justify-end pl-[100px] pt-2 cursor-pointer ">
+                <Image
+                  src={EnterVector}
+                  className="w-[30px] h-[30px] "
+                  alt="BotImage "
+                />
               </p>
             </div>
             <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
@@ -91,12 +102,16 @@ const Home = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-[#7E8299] text-[13px]">28,367 users</p>
                   <p className="w-[49px] h-[15px] flex justify-center items-center rounded-lg bg-green-100 text-green-500 text-[9px]">
-                    +1.33%
+                    online
                   </p>
                 </div>
               </div>
-              <p className="flex justify-end pl-24">
-                <AiOutlineRight className="text-blue-600 text-[42px] " />
+              <p className="flex justify-end pl-[100px] pt-2 cursor-pointer ">
+                <Image
+                  src={EnterVector}
+                  className="w-[30px] h-[30px] "
+                  alt="BotImage "
+                />
               </p>
             </div>
             <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
@@ -112,12 +127,41 @@ const Home = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-[#7E8299] text-[13px]">28,367 users</p>
                   <p className="w-[49px] h-[15px] flex justify-center items-center rounded-lg bg-green-100 text-green-500 text-[9px]">
-                    +1.33%
+                    online
                   </p>
                 </div>
               </div>
-              <p className="flex justify-end pl-24">
-                <AiOutlineRight className="text-blue-600 text-[42px] " />
+              <p className="flex justify-end pl-[100px] pt-2 cursor-pointer ">
+                <Image
+                  src={EnterVector}
+                  className="w-[30px] h-[30px] "
+                  alt="BotImage "
+                />
+              </p>
+            </div>
+            <div className="w-[360px] flex gap-2 rounded-2xl h-[64px] bg-white dark:bg-[#1E1E2D] pl-2 py-[9px]">
+              <Image
+                src={BotImage}
+                className="w-[50px] h-[50px] "
+                alt="BotImage "
+              />
+              <div>
+                <p className="font-medium text-[18px] text-slate-950 dark:text-slate-50   transition duration-75">
+                  Photolab
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="text-[#7E8299] text-[13px]">28,367 users</p>
+                  <p className="w-[49px] h-[15px] flex justify-center items-center rounded-lg bg-green-100 text-green-500 text-[9px]">
+                    online
+                  </p>
+                </div>
+              </div>
+              <p className="flex justify-end pl-[100px] pt-2 cursor-pointer ">
+                <Image
+                  src={EnterVector}
+                  className="w-[30px] h-[30px] "
+                  alt="BotImage "
+                />
               </p>
             </div>
           </div>
